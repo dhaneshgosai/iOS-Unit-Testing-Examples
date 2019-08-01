@@ -51,8 +51,8 @@ class TimeManagerTests: XCTestCase {
     }
     
     override func tearDown() {
-        super.tearDown()
         timeManager = nil
+        super.tearDown()
     }
     
     func testTimeDisplay_ShouldReturnAppendingMessageForTime() {
