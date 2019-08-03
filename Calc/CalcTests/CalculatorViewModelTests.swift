@@ -1,5 +1,5 @@
 //
-//  CalcTests.swift
+//  CalculatorViewModelTests.swift
 //  CalcTests
 //
 //  Created by Vinoth Vino on 01/08/19.
@@ -9,13 +9,13 @@
 import XCTest
 @testable import Calc
 
-class CalcTests: XCTestCase {
+class CalculatorViewModelTests: XCTestCase {
 
-    var sut: CalculationManager!
+    var sut: CalculatorViewModel!
     
     override func setUp() {
         super.setUp()
-        sut = CalculationManager()
+        sut = CalculatorViewModel()
     }
 
     override func tearDown() {
@@ -24,8 +24,8 @@ class CalcTests: XCTestCase {
     }
 
     func testInit_WhenGivenValues_TakesValues() {
-        let calcManager1 = CalculationManager(valueA: 10, valueB: 20, currentOperand: .multiply, valueEntryArray: [])
-        let calcManager2 = CalculationManager(valueA: 10, valueB: 20, currentOperand: .multiply, valueEntryArray: [])
+        let calcManager1 = CalculatorViewModel(valueA: 10, valueB: 20, currentOperand: .multiply, valueEntryArray: [])
+        let calcManager2 = CalculatorViewModel(valueA: 10, valueB: 20, currentOperand: .multiply, valueEntryArray: [])
         XCTAssertEqual(calcManager1, calcManager2)
     }
     

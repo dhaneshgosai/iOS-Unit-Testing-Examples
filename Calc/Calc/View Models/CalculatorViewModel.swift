@@ -1,5 +1,5 @@
 //
-//  Calculation.swift
+//  CalculatorViewModel.swift
 //  Calc
 //
 //  Created by Vinoth Vino on 01/08/19.
@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct CalculationManager {
+struct CalculatorViewModel {
     var valueA: Int = 0
     var valueB: Int = 0
     var currentOperand: Operand?
@@ -71,8 +71,8 @@ struct CalculationManager {
     }
 }
 
-extension CalculationManager: Equatable {
-    static func ==(lhs: CalculationManager, rhs: CalculationManager) -> Bool {
+extension CalculatorViewModel: Equatable {
+    static func ==(lhs: CalculatorViewModel, rhs: CalculatorViewModel) -> Bool {
         if lhs.valueA != rhs.valueA {
             return false
         } else if lhs.valueB != rhs.valueB {

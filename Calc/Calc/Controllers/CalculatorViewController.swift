@@ -31,29 +31,29 @@ class CalculatorViewController: UIViewController {
     @IBOutlet var divideBtn: UIButton!
     @IBOutlet var acBtn: UIButton!
     
-    var calculationManager: CalculationManager!
+    var calculatorViewModel: CalculatorViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        calculationManager = CalculationManager()
+        calculatorViewModel = CalculatorViewModel()
     }
     
     @IBAction func numberBtnWasPressed(_ sender: UIButton) {
-        calculationManager.append(sender.tag)
-        self.valueLabel.text = calculationManager.stringifyValues()
+        calculatorViewModel.append(sender.tag)
+        self.valueLabel.text = calculatorViewModel.stringifyValues()
     }
     
     @IBAction func acButtonWasPressed(_ sender: UIButton) {
-        self.valueLabel.text = calculationManager.clearValues()
+        self.valueLabel.text = calculatorViewModel.clearValues()
     }
     
     @IBAction func operandBtnWasPressed(_ sender: UIButton) {
         guard let operand = Operand(rawValue: sender.tag) else { return }
-        calculationManager.set(operand: operand)
+        calculatorViewModel.set(operand: operand)
     }
     
     @IBAction func equalsBtnWasPressed(_ sender: UIButton) {
-        let calculationString = String(describing: calculationManager.calculate())
+        let calculationString = String(describing: calculatorViewModel.calculate())
         self.valueLabel.text = calculationString
     }
 }
