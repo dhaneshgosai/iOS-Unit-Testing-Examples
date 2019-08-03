@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D121D8AE22F5A5D10067D881 /* DownloadClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D121D8AD22F5A5D10067D881 /* DownloadClient.swift */; };
+		D121D8B022F5A6630067D881 /* DownloadClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D121D8AF22F5A6630067D881 /* DownloadClientTests.swift */; };
 		D1D56AFF22F45EDB00E271B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D56AFE22F45EDB00E271B3 /* AppDelegate.swift */; };
 		D1D56B0122F45EDB00E271B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D56B0022F45EDB00E271B3 /* SceneDelegate.swift */; };
 		D1D56B0322F45EDB00E271B3 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D56B0222F45EDB00E271B3 /* PhotoViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D121D8AD22F5A5D10067D881 /* DownloadClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadClient.swift; sourceTree = "<group>"; };
+		D121D8AF22F5A6630067D881 /* DownloadClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadClientTests.swift; sourceTree = "<group>"; };
 		D1D56AFB22F45EDB00E271B3 /* Image Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D56AFE22F45EDB00E271B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D56B0022F45EDB00E271B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,8 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				D1D56B1522F45EDD00E271B3 /* Image_DownloaderTests.swift */,
-				D1D56B1722F45EDD00E271B3 /* Info.plist */,
 				D1D56B2822F4612100E271B3 /* PhotoViewControllerTests.swift */,
+				D1D56B1722F45EDD00E271B3 /* Info.plist */,
+				D121D8AF22F5A6630067D881 /* DownloadClientTests.swift */,
 			);
 			path = "Image DownloaderTests";
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				D1D56B2622F4607A00E271B3 /* Constant.swift */,
+				D121D8AD22F5A5D10067D881 /* DownloadClient.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D121D8AE22F5A5D10067D881 /* DownloadClient.swift in Sources */,
 				D1D56B2522F45FE400E271B3 /* PhotoCell.swift in Sources */,
 				D1D56B0322F45EDB00E271B3 /* PhotoViewController.swift in Sources */,
 				D1D56B2722F4607A00E271B3 /* Constant.swift in Sources */,
@@ -254,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D56B1622F45EDD00E271B3 /* Image_DownloaderTests.swift in Sources */,
+				D121D8B022F5A6630067D881 /* DownloadClientTests.swift in Sources */,
 				D1D56B2922F4612100E271B3 /* PhotoViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

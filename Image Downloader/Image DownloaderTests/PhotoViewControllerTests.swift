@@ -26,8 +26,8 @@ class PhotoViewControllerTests: XCTestCase {
     }
 
     func testPhotoDownload_ImageOrientationIsIdentical() {
-        let expectedImageOrientation = UIImage(named: "pexels-photo-768562")?.imageOrientation
-        guard let url = URL(string: imageURLStrings[0]) else { XCTFail(); return }
+        let expectedImageOrientation = UIImage(named: "pexels-photo-768218")?.imageOrientation
+        guard let url = URL(string: imageURLStrings[3]) else { XCTFail(); return }
         let sessionAnsweredExpectation = expectation(description: "Session")
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
@@ -41,7 +41,7 @@ class PhotoViewControllerTests: XCTestCase {
             }
         }.resume()
         
-        waitForExpectations(timeout: 28, handler: nil)
+        waitForExpectations(timeout: 15, handler: nil)
     }
 
 }
