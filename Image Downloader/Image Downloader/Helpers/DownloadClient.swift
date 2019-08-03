@@ -21,6 +21,14 @@ class DownloadClient {
             // code to create image
         }.resume()
     }
+    
+    func performanceTestableFunction() {
+        let totalValue = 10000
+        var currentValue = 0
+        for i in 1...totalValue {
+            currentValue = i
+        }
+    }
 }
 
 extension URLSession: SessionProtocol {}
